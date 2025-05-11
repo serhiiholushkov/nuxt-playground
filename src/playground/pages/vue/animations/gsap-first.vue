@@ -1,0 +1,19 @@
+<script setup lang="ts">
+const { $gsap } = useNuxtApp();
+
+const number = ref(0);
+const tweened = reactive({
+  number: 0,
+});
+
+watch(number, n => {
+  $gsap.to(tweened, { duration: 0.5, number: Number(n) || 0 });
+});
+</script>
+
+<template>
+  <div>
+    <p>Type a number: <input v-model.number="number" /></p>
+    <p>{{ tweened.number.toFixed(0) }}</p>
+  </div>
+</template>

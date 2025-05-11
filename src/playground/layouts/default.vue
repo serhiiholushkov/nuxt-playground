@@ -17,6 +17,9 @@
           </NuxtLink>
         </li>
         <li>
+          <NuxtLink to="/vue/animations/gsap-first">Gsap first </NuxtLink>
+        </li>
+        <li>
           <NuxtLink to="/vue/slots">Slots</NuxtLink>
         </li>
       </ul>
