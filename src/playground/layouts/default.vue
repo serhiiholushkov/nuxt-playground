@@ -22,6 +22,11 @@
         <li>
           <NuxtLink to="/vue/slots">Slots</NuxtLink>
         </li>
+        <li>
+          <NuxtLink to="/test/test-page" data-testId="link-e2e-test1-page"
+            >E2E Test Page</NuxtLink
+          >
+        </li>
       </ul>
     </nav>
     <div class="flex flex-1">
