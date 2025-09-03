@@ -75,3 +75,11 @@ export function petAction(pet: Fish | Bird) {
     pet.fly();
   }
 }
+
+// another narrowing example
+export function move(animal: Fish | Bird) {
+  if ('swim' in animal) {
+    return animal.swim();
+  }
+  return animal.fly();
+}
